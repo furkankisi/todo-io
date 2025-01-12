@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#bg {
+    background: linear-gradient(225deg, #5596FF 0%, #AC2DEB 100%);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todohead {
+    margin-top: 20px;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    border: 2px solid black;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox:checked {
+    background: linear-gradient(225deg, #5596FF 0%, #AC2DEB 100%);
+}
+
+
+.first {
+    gap: 12px;
+    align-items: center;
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.first input {
+    width: 500px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    color: #9495A5;
+    outline: none;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #e3e4f1;
+  }
+  
+  .todo-input {
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #494C6B;
+    flex: 1;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  .todo-input:focus {
+    border-bottom: 2px solid #5596FF;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    border: none;
+    background: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .edit-btn:hover,
+  .delete-btn:hover {
+    background: none;
+
+  }
+  
+  #itemsLeft {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #494C6B;
+    text-align: left;
+    box-shadow: 0px 35px 50px -15px #C2C3D680;
+    border-radius: 5px;
+  }
+  
+ .footer{
+    border-radius: 5px;
+    color: #9495A5;
+    font-family: Josefin Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 15px 80px;
+    background-color: white;
+    box-shadow: 0px 35px 50px -15px #C2C3D680;
+    display: flex;
+    justify-content: space-between;
+ }
+@media (min-width:375px) {
+    body{
+        width: 100%;
+        
+    }
+    #bg{
+        width: 100%;
+        height: 300px;
+    }
+    
+}
